@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="index1.css" type="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="Assets/Images/logo.png" type="image/x-icon">
+        
+    <style>
+        body {
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        #side-help-bar {
+            float: left;
+        }
+
+        #side-help-list {
+            list-style-type: none;
+            margin: 10px;
+            padding: 8px;
+        }
+
+        .side-help-list-items {
+            margin: 10px;
+            padding: 6px;
+            font-size: 21px;
+            font-weight: 600;
+            border-radius: 15px;
+        }
+
+        .side-help-list-items:hover {
+            background-color: rgb(48, 47, 47);
+        }
+
+        .icon {
+            padding-right: 50px;
+            font-size: 24px;
+        }
+
+        #tweet-button {
+            background-color: rgb(29, 155, 240);
+            padding-left: 32px;
+            padding-right: 32px;
+            border-radius: 9999px;
+            height: 44px;
+            margin-left: 50px;
+            width: 205px;
+        }
+
+        .post-style {
+            border: 1px solid whitesmoke;
+            
+            height: 150px;
+            
+        }
+
+
+        .postimg {
+
+            border: 3px solid whitesmoke;
+            height: 136px;
+            float: left;
+            margin-top: 4px;
+            margin-left: 5px;
+        }
+
+        .postdiv {
+            display: flex;
+            padding-left: 10px;
+        margin-top: 18px;
+            font-weight: 600;
+        }
+
+        #refresh {
+            background-color: rgb(29, 155, 240);
+            padding-left: 32px;
+            padding-right: 32px;
+            border-radius: 9999px;
+            height: 44px;
+            margin-left: 213px;
+            width: 205px;
+            position: fixed;
+        }
+
+        #mother-div {
+            display: inline-block;
+            width: 700px;
+            
+          
+        }
+
+        a:visited {
+            color: whitesmoke;
+        }
+
+        #user-display {
+            margin-right: 10px;
+            border: 1px solid gray;
+            border-radius: 30px;
+            margin-top: 20px;
+            height: 60px;
+        }
+
+        .imgx {
+            border-radius: 150px;
+            height: 60px;
+            float: left
+        }
+
+        .divx {
+            font-size: 21px;
+            font-weight: 600;
+            margin-left: 107px;
+
+            margin-top: 5px;
+        }
+
+        .divx1 {
+            font-size: large;
+            margin-left: 88px;
+            margin-top: 5px;
+        }
+
+
+
+        input:focus,
+        select:focus,
+        textarea:focus,
+        button:focus {
+            outline: none;
+        }
+        .right-side-style>button{
+            
+            margin: 30px;
+            margin-left: 0px;
+            margin-bottom: 20px;
+            width: 50px;
+            height: 50px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background-color: rgba(255, 255, 255, 0.692);
+            background-image: url("../Images/search.png");
+            background-size: 30%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .right-side-style>button:hover{
+            
+            background-color: rgba(255, 255, 255, 0.801);
+        }
+        .right-side-style>input{
+            
+            margin: 30px;    
+            margin-right: 0px;
+            margin-bottom: 20px;
+            width: 180px;
+            height: 43px;    
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            padding-left: 20px;
+            font-size: 18px;
+            background-color: rgba(255, 255, 255, 0.692);
+            color: rgb(0, 0, 0);
+            border: none;
+        }
+
+        .right-side-style>div{
+            
+            margin: 30px; 
+            margin-top: 0px;
+            margin-right: 37px;   
+            /* width: 250px; */
+            height: 460px;    
+            border-radius: 25px;
+            background-color: rgba(255, 255, 255, 0.644);
+            border: none;
+        }
+        .search-profile-style{
+            width: 100%;
+        }
+        .search-profile-style>img{
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 50%;
+            margin: 10px;
+            margin-top: 20px;
+            margin-right: 0px;
+            float: left;
+        }
+        .search-profile-style>span{
+            color: white;
+            margin: 20px;
+            margin-left: 0px;
+            width: 70%;
+            height: 60px;
+            /* border: 1px solid lightgray; */
+            float: left;
+        }
+        .search-profile-style>span>h3{
+            margin: 10px;
+            margin-bottom: 3px;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+        .search-profile-style>span>p{
+            color: rgb(0, 0, 0);
+            margin: 10px;
+            margin-top: 0px;
+            font-size: 14px;
+        }
+        .right-side-style{
+            width: 24%;
+            height: 600px;
+            float: right;
+            /* position: fixed; */
+            /* margin-left: 70%; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="side-help-bar">
+
+        <ul id="side-help-list">
+            <li class="side-help-list-items"><a href="index1.html"><i class="fa-brands fa-twitter icon"></i></a></li>
+            <li class="side-help-list-items">
+                <a href="index1.html"><i class="fa-solid fa-house-chimney-user icon"></i> HOME</a></li>
+            <li class="side-help-list-items"><i class="fa-solid fa-hashtag icon"></i> EXPLORE</li>
+            <li class="side-help-list-items"><i class="fa-regular fa-bell icon"></i>NOTIFICATIONS</li>
+            <li class="side-help-list-items"><i class="fa-regular fa-envelope icon"></i>MESSAGES</li>
+            <li class="side-help-list-items"><a href="Profile.html"><i class="fa-regular fa-user icon"></i>PROFILE</li></a>
+            <li class="side-help-list-items"><i class="fa-solid fa-ellipsis icon"></i>MORE</li>
+            <li class="side-help-list-items"> <i class="fa-regular fa-bookmark icon"></i>Bookmarks</li>
+        </ul>
+
+        <a href="Post.html"><button id="tweet-button" onclick="second()">TWEET</button></a>
+
+        <div id="user-display"></div>
+
+    </nav>
+
+    <div id="mother-div">
+
+        <button id="refresh" onclick="second()">new tweets</button>
+
+        <div class="post-style" id="tweet1"></div>
+        <div class="post-style" id="tweet2"></div>
+        <div class="post-style" id="tweet3"></div>
+        <div class="post-style" id="tweet4"></div>
+
+    </div>
+    <script src="Assets/Scripts/index1.js"></script>
+
+
+
+
+    <aside class="right-side-style">
+
+           
+        <input type="text" name="search-box" id="search" placeholder="Search">
+        <button onclick="search()">.</button>
+
+        <div id="search-continer">
+
+        </div>
+
+
+        <script src="Assets/Scripts/index-search-script.js"></script>
+
+        
+        
+    </aside>
+
+
+</body>
+
+</html>
